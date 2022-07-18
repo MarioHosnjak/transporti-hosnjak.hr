@@ -1,8 +1,11 @@
 O nama
 GOTOVO  Gdje vozimo
 GOTOVO  Vozni park
-Brojač prijevoza
+GOTOVO  Brojač prijevoza
+Kontaktirajte nas
+
 Pracenje kamiona
+Certifikati
 
 Job application
 Upit za prijevoz
