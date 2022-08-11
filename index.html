@@ -20,7 +20,7 @@ https://www.tooplate.com/view/2117-infinite-loop
   </head>
   <body>    
     <!-- Hero section -->
-    <section id="pocetna" class="text-white tm-font-big tm-parallax">
+    <section id="pocetna" class="text-white tm-font-big tm-parallax" style="background-size: cover">
       <!-- Navigation -->
       <nav class="navbar navbar-expand-md tm-navbar" id="tmNav">              
         <div class="container">   
@@ -32,7 +32,7 @@ https://www.tooplate.com/view/2117-infinite-loop
             <i class="fas fa-bars navbar-toggler-icon"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
+            <ul class="navbar-nav ml-auto ">
               <li class="nav-item">
                   <a class="nav-link tm-nav-link" href="#pocetna">Početna</a>
               </li>
@@ -190,7 +190,7 @@ https://www.tooplate.com/view/2117-infinite-loop
                 Nudimo usluge tuzemnog i inozemnog prijevoza. <br/> Zemlje u kojima vršimo prijevoz su <strong>Hrvatska, Slovenija, Mađarska, Austrija, Slovačka, Češka,
                 <br/>Poljska, Litva, Latvija, Estonija, Finska i Švedska.</strong>
               </p>
-            <div class="mx-auto tm-gallery-container tm-gallery-container-2">
+            <div class="mx-auto tm-gallery-container-2">
               <div class="tm-testimonials-carousel">
                 <figure class="tm-testimonial-item">
                   <img src="img/countries/hr-06.png" alt="Image" class="img-fluid mx-auto">
@@ -267,7 +267,7 @@ https://www.tooplate.com/view/2117-infinite-loop
               <h2 class="tm-text-primary tm-section-title mb-4">Vozni park</h2>
               <!-- <p>+<span class="counter-vozila" id="counter-vozila">100</span> Teretnih vozila</p> -->
               <p class="mx-auto tm-section-desc">
-                Nudimo prijevoz <strong>šleperima, mega šleperima, tandemima i hladnjačama.</strong><br/> U našem voznom parku prevladavaju najnovija vozila marki Man, Daf, Volvo, Scania te Mercedes.
+                Nudimo prijevoz <strong>šleperima, mega šleperima, tandemima i hladnjačama.</strong><br/> U našem voznom parku prevladavaju najnovija vozila marki Man, Daf, Volvo, Scania i Mercedes.
               </p>
           </div>            
         </div>
@@ -420,6 +420,27 @@ https://www.tooplate.com/view/2117-infinite-loop
             
             
         </div><!-- row ending -->
+
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <div class="contact-item">
+              <a rel="nofollow" href="https://www.google.com/maps/place/PRIJEVOZ+I+TRGOVINA+MLADEN+HOŠNJAK/@46.332796,16.2678963,16.88z/data=!4m5!3m4!1s0x476f5444fbebe637:0xe7524fb2a86e7713!8m2!3d46.3329117!4d16.2695466" class="item-link">
+                  <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
+                  <span class="mb-0">Gdje se nalazi ured?</span>
+              </a>              
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2754.8435207707876!2d16.267261717443848!3d46.33280080000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476f5444fbebe637%3A0xe7524fb2a86e7713!2sPRIJEVOZ%20I%20TRGOVINA%20MLADEN%20HO%C5%A0NJAK!5e0!3m2!1sen!2shr!4v1660135270528!5m2!1sen!2shr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="contact-item">
+              <a rel="nofollow" href="https://www.google.com/maps/place/46°19'58.8%22N+16°12'35.1%22E/@46.3330467,16.2071914,1099m/data=!3m1!1e3!4m6!3m5!1s0x0:0xbe8a24bd02493e70!7e2!8m2!3d46.3329857!4d16.2097447" class="item-link">
+                  <i class="fas fa-2x fa-map-marker-alt mr-4"></i>
+                  <span class="mb-0">Gdje se nalazi parkiralište?</span>
+              </a>              
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5509.662268694628!2d16.2071914!3d46.3330467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbe8a24bd02493e70!2zNDbCsDE5JzU4LjgiTiAxNsKwMTInMzUuMSJF!5e0!3m2!1sen!2shr!4v1660136240628!5m2!1sen!2shr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div><!-- row ending -->
         
       </div>
 
@@ -437,9 +458,10 @@ https://www.tooplate.com/view/2117-infinite-loop
     <script src="js/easing.min.js"></script>
     <script src="js/jquery.singlePageNav.min.js"></script>     
     <script src="js/bootstrap.min.js"></script> 
-    <!-- <script src="js/truckCounter.js"></script> -->
     <script src="js/projectCounter.js"></script> 
     <script>
+
+      var firstRun = true;
 
       function getOffSet(){
         var _offset = 450;
@@ -448,12 +470,13 @@ https://www.tooplate.com/view/2117-infinite-loop
         if(windowHeight > 500) {
           _offset = 400;
         } 
-        if(windowHeight > 680) {
+        /* if(windowHeight > 680) {
           _offset = 300
         }
         if(windowHeight > 830) {
           _offset = 210;
-        }
+        } */
+        _offset = 0;
 
         return _offset;
       }
@@ -462,7 +485,7 @@ https://www.tooplate.com/view/2117-infinite-loop
         var offset = getOffSet();
         var from_top = $doc.scrollTop(),
           bg_css = 'center ' +(multiplier * from_top - offset) + 'px';
-        $object.css({"background-position" : bg_css });
+        $object.css({"background-position" : bg_css , "background-size" : 'cover'});
       }
 
       // Parallax function
@@ -550,11 +573,11 @@ https://www.tooplate.com/view/2117-infinite-loop
         });
 
         // Pop up
-        $('.tm-gallery').magnificPopup({
+        /* $('.tm-gallery').magnificPopup({
           delegate: 'a',
           type: 'image',
           gallery: { enabled: true }
-        });
+        }); */
 
         $('.tm-testimonials-carousel').slick({
           dots: true,
@@ -586,7 +609,7 @@ https://www.tooplate.com/view/2117-infinite-loop
         });
 
         // Gallery
-        $('.tm-gallery').slick({
+        /* $('.tm-gallery').slick({
           dots: true,
           pocetna: false,
           slidesToShow: 5,
@@ -621,7 +644,7 @@ https://www.tooplate.com/view/2117-infinite-loop
             }
           }
         ]
-        });
+        });*/
       });
     </script>
   </body>
