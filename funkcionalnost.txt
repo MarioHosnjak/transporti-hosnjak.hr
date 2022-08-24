@@ -1,16 +1,28 @@
 O nama
+    -Certifikati
+    -Pracenje kamiona
 GOTOVO  Gdje vozimo
 GOTOVO  Vozni park
 GOTOVO  Brojač prijevoza
 Kontaktirajte nas
+    -informacije
 
 Pracenje kamiona
 Certifikati
 Adrese
 
 
-Job application
-Upit za prijevoz
+    Job application
+    Upit za prijevoz
 
 
 3 JEZIKA!!!!!
+
+
+
+
+GIT 
+
+git add --all
+git commit -m "poruka"
+git push origin head
