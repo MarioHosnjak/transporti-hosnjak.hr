@@ -4,8 +4,8 @@ O nama
 GOTOVO  Gdje vozimo
 GOTOVO  Vozni park
 GOTOVO  Brojač prijevoza
-Kontaktirajte nas
-    -informacije
+GOTOVO  Kontaktirajte nas    -informacije
+Footer
 
 Pracenje kamiona
 Certifikati
