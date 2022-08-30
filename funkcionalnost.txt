@@ -1,11 +1,16 @@
 O nama
+    -Opcenito
+
+    -Ciljevi?
+    -Bonitetna ocijena
+    -Usluge
     -Certifikati
     -Pracenje kamiona
 GOTOVO  Gdje vozimo
 GOTOVO  Vozni park
 GOTOVO  Brojač prijevoza
 GOTOVO  Kontaktirajte nas    -informacije
-Footer
+GOTOVO  Footer
 
 Pracenje kamiona
 Certifikati
@@ -18,7 +23,10 @@ Adrese
 
 3 JEZIKA!!!!!
 
-
+Ubuduce!
+    -Galerija
+    -Aplikacija za posao
+    -Upit za prijevoz
 
 
 GIT 
@@ -26,3 +34,19 @@ GIT
 git add --all
 git commit -m "poruka"
 git push origin head
+
+
+!BUGOVI!
+GOTOVO  -Bijeli sloj s desne strane na mobile
+GOTOVO  -Slika na Gdje vozimo? na mobile
+GOTOVO  -Left margin kod kontakti na mobile
+        -Donji sloj kod © na mobile
+        -Donji sloj kod © na mobile u landscape
+GOTOVO  -Navbar strši van na mobile
+        -Ne učitava se slika za Gdje vozimo? i Kontakt na mobile
+
+
+
+
+Tvrtku "Prijevoz i trgovina Mladen Hošnjak" osnovao je Mladen Hošnjak, kupivši svoj prvi kamion sada već davne 2004. godine.
+Danas, punih 18 godina kasnije, tvrtka broji više od 50 zaposlenika te više od 40 teretnih vozila. 

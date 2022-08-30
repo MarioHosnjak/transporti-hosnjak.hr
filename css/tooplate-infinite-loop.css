@@ -95,6 +95,12 @@ blockquote {
   font-weight: bold;
 }
 
+@media screen and (max-width: 380px){
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+}
+
 .navbar-brand:hover,
 .tm-navbar.scroll .navbar-brand:hover {
   color: #38B;
@@ -267,19 +273,26 @@ blockquote {
 	padding: 20px 0 30px 0;
 }
 
+@media screen and (min-width: 992px){
+  .onama-border {
+    display: none;
+  }
+}
+
 /* Testimonials */
 #gdjevozimo {
   color: white;
   background-image: url(../img/infinite-loop-02.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 100%; 
   position: relative;
 }
 
 @media (max-width: 991px) {
   #gdjevozimo {
     background-image: url(../img/infinite-loop-02-mobile.jpg);
+    background-size: cover;
   }
 }
 
@@ -727,10 +740,33 @@ iframe{
  .certifikati-text {
     max-height: 22vh;
   }
+  .certifikati-izbornik {
+    display: none;
+  }
+}
+
+.certifikati-middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 0.1rem;
+}
+
+.certifikati-middle div {
+  height: 10vh;
+}
+
+.certifikati-izbornik {
+  align-items: baseline;
+}
+
+.certifikati-izbornik p {
+  margin-left: 9rem;
 }
 
 .certifikati p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.1rem;
 }
 
 .certifikati img {
@@ -743,6 +779,12 @@ iframe{
 
 .tm-footer a {
 	color: #fff;
+}
+
+@media screen and (max-width: 390px) {
+  .tm-footer .footer-copyright {
+    height: 8vh;
+  }
 }
 
 .tm-footer a:hover {
