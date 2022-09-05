@@ -9,24 +9,17 @@ O nama
 GOTOVO  Gdje vozimo
 GOTOVO  Vozni park
 GOTOVO  Brojač prijevoza
-GOTOVO  Kontaktirajte nas    -informacije
+GOTOVO  Kontaktirajte nas    *IZMIJENITI IBAN*
 GOTOVO  Footer
-
-Pracenje kamiona
-Certifikati
-Adrese
+GOTOVO  Pošalji poruku
 
 
-    Job application
-    Upit za prijevoz
-
-
-3 JEZIKA!!!!!
+GOT?    3 JEZIKA!!!!!
 
 Ubuduce!
-    -Galerija
-    -Aplikacija za posao
-    -Upit za prijevoz
+GOTOVO  -Galerija   https://codeconvey.com/3d-images-slideshow-using-html-and-css/
+        -Aplikacija za posao
+        -Upit za prijevoz
 
 
 GIT 
@@ -40,10 +33,11 @@ git push origin head
 GOTOVO  -Bijeli sloj s desne strane na mobile
 GOTOVO  -Slika na Gdje vozimo? na mobile
 GOTOVO  -Left margin kod kontakti na mobile
-        -Donji sloj kod © na mobile
-        -Donji sloj kod © na mobile u landscape
+GOTOVO  -Donji sloj kod © na mobile
+GOTOVO? -Donji sloj kod © na mobile u landscape
 GOTOVO  -Navbar strši van na mobile
-        -Ne učitava se slika za Gdje vozimo? i Kontakt na mobile
+!!!     -Ne učitava se slika za Gdje vozimo? i Kontakt na mobile
+GOTOVO  -Galerija izlazi iz kadra na mobile
 
 
 

@@ -249,6 +249,21 @@ blockquote {
   padding: 20px 50px;
 }
 
+/* Languages */
+
+.language-icons {
+  position: fixed;
+  margin-top: 8vh;
+  right: 4vw;
+  z-index: 1000;
+}
+
+@media screen and (max-width: 466px) {
+  .language-icons {
+    margin-top: 6vh;
+  }
+}
+
 /* Introduction */
 
 #introduction {
@@ -327,6 +342,11 @@ blockquote {
 .tm-testimonial-item img {
   border-radius: 50%;
   margin-bottom: 35px;
+}
+
+.my-gallery-item img {
+  border-radius: 0%;
+  height: 20vh;
 }
 
 .tm-testimonial-item figcaption {
@@ -565,6 +585,117 @@ figure.effect-honey:hover h2 i {
   }
 }
 
+/* GALERIJA SLIKA */
+
+.slideshow-outerdiv {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slideshow{
+  margin: 0 auto;
+  padding-top: 50px;
+  height: 450px;
+  width: 100%;
+  perspective: 1000px;
+}
+
+.content{
+  margin: auto;
+  width: 150px;
+  perspective: 1000px;
+  position:relative;
+  padding-top: 80px;
+  transform-style: preserve-3d;
+}
+
+@media screen and (max-width: 1000px) {
+  .slideshow {
+    perspective: 1500px;
+  }
+  .content {
+    width: 100px;
+  }
+}
+
+.slider-content{
+  width: 100%;
+  position:absolute;
+  float:right;
+  animation: rotate 40s infinite linear;
+  transform-style: preserve-3d;
+}
+.slider-content:hover{
+  cursor: pointer;
+  animation-play-state: paused;
+}
+
+.slider-content figure{
+  width:180px;
+  height:120px;
+  border:1px solid #555;
+  overflow:hidden;
+  position:absolute;
+}
+.slider-content img{
+  image-rendering: auto;
+  transition: all 300ms;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-content img:hover{
+  transform: scale(1.2); 
+  transition: all 300ms; 
+} 
+.shadow{ 
+  position: absolute; 
+  box-shadow: 0px 0px 0px #000; 
+}
+
+.slider-content figure:nth-child(1){
+  transform:rotateY(0deg) translateZ(300px);
+}
+ 
+.slider-content figure:nth-child(2){
+  transform:rotateY(40deg) translateZ(300px);
+}
+.slider-content figure:nth-child(3){
+  transform:rotateY(80deg) translateZ(300px);
+}
+.slider-content figure:nth-child(4){
+  transform:rotateY(120deg) translateZ(300px);
+}
+.slider-content figure:nth-child(5){
+  transform:rotateY(160deg) translateZ(300px);
+}
+.slider-content figure:nth-child(6){
+  transform:rotateY(200deg) translateZ(300px);
+}
+.slider-content figure:nth-child(7){
+  transform:rotateY(240deg) translateZ(300px);
+}
+.slider-content figure:nth-child(8){
+  transform:rotateY(280deg) translateZ(300px);
+}
+.slider-content figure:nth-child(9){
+  transform:rotateY(320deg) translateZ(300px);
+}
+
+@keyframes rotate {
+  from{
+    transform: rotateY(0deg);
+  }
+  to{
+      transform: rotateY(360deg);
+  }
+}
+
+
+/* KRAJ GALERIJA SLIKA */
+
+
+
 
 /* Contact */
 
@@ -781,11 +912,11 @@ iframe{
 	color: #fff;
 }
 
-@media screen and (max-width: 390px) {
+/* @media screen and (max-width: 390px) {
   .tm-footer .footer-copyright {
     height: 8vh;
   }
-}
+} */
 
 .tm-footer a:hover {
 	color: #9CF;
@@ -805,10 +936,9 @@ p {
   line-height: 1.9;
 }
 
-.footer-bg-img {
+/* .footer-bg-img {
   height: 22vh;
-  /*width: 45vw;*/
-}
+} */
 
 @media (min-width: 768px) {
   .tm-intro-text-container {
