@@ -1,15 +1,14 @@
 O nama
-    -Opcenito
+    -Opcenito       
 
-    -Ciljevi?
-    -Bonitetna ocijena
-    -Usluge
+    -Bonitetna ocijena 
+    -Usluge             ENG
     -Certifikati
     -Pracenje kamiona
 GOTOVO  Gdje vozimo
 GOTOVO  Vozni park
 GOTOVO  Brojač prijevoza
-GOTOVO  Kontaktirajte nas    *IZMIJENITI IBAN*
+GOTOVO  Kontaktirajte nas    *IZMIJENITI IBAN*      ENG
 GOTOVO  Footer
 GOTOVO  Pošalji poruku
 
