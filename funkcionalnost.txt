@@ -1,14 +1,8 @@
-O nama
-    -Opcenito       
-
-    -Bonitetna ocijena 
-    -Usluge             ENG
-    -Certifikati
-    -Pracenje kamiona
+GOTOVO  O nama  -Opcenito   -Bonitetna ocijena -Usluge -Certifikati    -Pracenje kamiona
 GOTOVO  Gdje vozimo
 GOTOVO  Vozni park
 GOTOVO  Brojač prijevoza
-GOTOVO  Kontaktirajte nas    *IZMIJENITI IBAN*      ENG
+GOTOVO  Kontaktirajte nas
 GOTOVO  Footer
 GOTOVO  Pošalji poruku
 
@@ -38,8 +32,12 @@ GOTOVO  -Navbar strši van na mobile
 !!!     -Ne učitava se slika za Gdje vozimo? i Kontakt na mobile
 GOTOVO  -Galerija izlazi iz kadra na mobile
 
+GOTOVO  Strelec godina na sliki
+GOTOVO  IBAN HR dopisati
+GOTOVO  Prevesti na eng Additional info
+GOTOVO  Napisati Usluge
+GOTOVO  Prevesti Usluge
+GOTOVO  Provjeriti dimenzije kamiona
+        Promijeniti mail u Send a message
+GOTOVO  Kumova slika u galeriji
 
-
-
-Tvrtku "Prijevoz i trgovina Mladen Hošnjak" osnovao je Mladen Hošnjak, kupivši svoj prvi kamion sada već davne 2004. godine.
-Danas, punih 18 godina kasnije, tvrtka broji više od 50 zaposlenika te više od 40 teretnih vozila. 
