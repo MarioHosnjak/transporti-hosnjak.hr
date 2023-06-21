@@ -41,7 +41,7 @@ document.addEventListener('scroll', function () {
     if(counterDiv && isInViewport(counterDiv)){
         $('#number1').jQuerySimpleCounter({end: 16000,duration: 3000});
         $('#number2').jQuerySimpleCounter({end: 40,duration: 3500});
-        $('#number3').jQuerySimpleCounter({end: 18,duration: 3500});
+        $('#number3').jQuerySimpleCounter({end: 19,duration: 3500});
         $('#number4').jQuerySimpleCounter({end: 50,duration: 3200});
         counterDiv = undefined;
     }
