@@ -144,7 +144,7 @@ blockquote {
 
 #pocetna {
 	background-color: #222;
-  background-image: url(../img/bg/kamion_logo_gore_sivo.jpg);
+  background-image: url(../img/bg/horizontal_mid_cropped.jpeg);
   background-repeat: no-repeat;
   height: 100vh;
   width: auto;
@@ -152,27 +152,21 @@ blockquote {
   position: relative;
 }
 
-@media (min-height: 600px) and (min-width: 1920px) {
+@media screen and (max-width: 480px) {
   #pocetna {
-    background-size: cover;
+    background-image: url(../img/bg/vertical_16x9.jpeg);
   }
 }
 
-@media (min-height: 830px) {
+@media screen and (min-width: 481px) and (max-width: 767px) {
   #pocetna {
-    background-position: center -210px;
+    background-image: url(../img/bg/vertical_4x3.jpeg);
   }
 }
 
-@media (min-height: 500px) and (max-height: 679px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   #pocetna {
-    background-position: center -400px;
-  }
-}
-
-@media (max-height: 499px) {
-  #pocetna {
-    background-position: center -450px;
+    background-image: url(../img/bg/vertical_4x3.jpeg);
   }
 }
 
