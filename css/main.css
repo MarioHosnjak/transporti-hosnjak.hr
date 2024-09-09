@@ -710,6 +710,20 @@ figure.effect-honey:hover h2 i {
 /* KRAJ GALERIJA SLIKA */
 
 
+/* NOVA GALERIJA SLIKA */
+
+.gallery-container {
+  height: 400px; 
+  max-height: 400px; 
+  display: flex; 
+  justify-content: center;
+}
+
+.gallery-image {
+  max-width: 100vw; 
+  overflow: hidden; 
+  object-fit: cover;
+}
 
 
 /* Contact */
