@@ -723,6 +723,7 @@ figure.effect-honey:hover h2 i {
   max-width: 100vw; 
   overflow: hidden; 
   object-fit: cover;
+  cursor: pointer;
 }
 
 

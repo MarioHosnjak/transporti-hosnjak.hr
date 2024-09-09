@@ -7,9 +7,6 @@
     top: 0;
     width: 100%; /* Full width */
     height: 100vh; /* Full height */
-    /* display: flex;
-    flex-direction: column;
-    align-content: center; */
     justify-content: center;
     align-items: center;
     background-color: rgb(0,0,0); /* Fallback color */
@@ -20,20 +17,18 @@
   .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
+    /*width: 80%;*/
     max-width: 700px;
   }
   
   /* Caption of Modal Image */
   #caption {
-    /* margin: auto; */
     display: block;
     width: 80%;
     max-width: 700px;
     text-align: center;
     color: #ccc;
     padding: 10px 0;
-    /* height: 150px; */
   }
   
   /* Add Animation */

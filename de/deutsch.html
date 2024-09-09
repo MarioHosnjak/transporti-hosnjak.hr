@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/counter.css" />
+  <link rel="stylesheet" href="../css/modal.css"/>
 </head>
 
 <body>
@@ -208,26 +209,110 @@
       </div> <!-- third row -->
     </div>
 
-    <div class="slideshow-outerdiv">
-      <section class="slideshow">
-        <div class="content">
-          <div class="slider-content">
-            <figure class="shadow"><a href="../img/gallery/img01.jpg"><img src="../img/gallery/img01.jpg"></a><p class="img__description">Fußballtreffen 2019.</p></figure>
-            <figure class="shadow"><a href="../img/gallery/img02.jpeg"><img src="../img/gallery/img02.jpeg"></a><p class="img__description"></p></figure>
-            <figure class="shadow"><a href="../img/gallery/img03.jpg"><img src="../img/gallery/img03.jpg"></a><p class="img__description">10-jähriges Arbeitsjubiläum von Slavko Bogadek - 2018.</p></figure>
-            <figure class="shadow"><a href="../img/gallery/img04.jpeg"><img src="../img/gallery/img04.jpeg"></a><p class="img__description">10-jähriges Arbeitsjubiläum von Franjo Pakši - 2022.</p></figure>
-            <figure class="shadow"><a href="../img/gallery/img05.jpg"><img src="../img/gallery/img05.jpg"></a><p class="img__description">10-jähriges Arbeitsjubiläum von Robert Strelec - 2016.</p></figure>
-            <figure class="shadow"><a href="../img/gallery/img06.jpg"><img src="../img/gallery/img06.jpg"></a><p class="img__description">10-jähriges Arbeitsjubiläum von Franjo Košutar - 2019.</p></figure>
-            <figure class="shadow"><a href="../img/gallery/img07.jpeg"><img src="../img/gallery/img07.jpeg"></a><p class="img__description">Unser Bürofläche</p></figure>
-            <figure class="shadow"><a href="../img/gallery/img08.jpg"><img src="../img/gallery/img08.jpg"></a><p class="img__description"></p></figure>
-            <figure class="shadow"><a href="../img/gallery/img09.JPG"><img src="../img/gallery/img09.JPG"></a><p class="img__description">10-jähriges Arbeitsjubiläum von Ivan Talan und Velmir Kamberović - 2017.</p></figure>
-            <figure class="shadow"><a href="../img/gallery/img10.jpg"><img src="../img/gallery/img10.jpg"></a><p class="img__description"></p></figure>
-            <figure class="shadow"><a href="../img/gallery/img11.jpg"><img src="../img/gallery/img11.jpg"></a><p class="img__description">Jahresendfeier - 2019.</p></figure>
-            <figure class="shadow"><a href="../img/gallery/img12.jpg"><img src="../img/gallery/img12.jpg"></a><p class="img__description">10-jähriges Arbeitsjubiläum von Robert Pšak - 2019.</p></figure>
-            <figure class="" style="border: 0px; animation: none;"><img src="../img/logo-noBg.png"></figure>
+    <!-- Hidden Gallery Modal -->
+    <div onclick="closeModal()" id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <div style="max-height: 80vh;"><img style="height: 100%;" class="modal-content" id="img01"></div>
+      <div id="caption"></div>
+    </div>
+
+    <div class="gallery-container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="11"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="12"></li>
+          </ol>
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100">
+              <img onclick="showModal(this.id, 'Feier zum 20-jährigen Firmenjubiläum - 2024.')" class="gallery-image d-block h-100" src="../img/gallery/img13.jpg" id="img13.jpg" alt="First slide">
+              <div class="carousel-caption d-block">
+                <p style="margin-bottom: 0px;">Feier zum 20-jährigen Firmenjubiläum - 2024.</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img onclick="showModal(this.id, 'Fußballtreffen 2019.')" class="gallery-image d-block h-100" src="../img/gallery/img01.jpg" id="img01.jpg" alt="First slide">
+              <div class="carousel-caption d-block">
+                <p style="margin-bottom: 0px;">Fußballtreffen 2019.</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+            <img onclick="showModal(this.id, '')" class="gallery-image d-block h-100" src="../img/gallery/img02.jpeg" id="img02.jpeg" alt="Second slide">
+            </div>
+            <div class="carousel-item h-100">
+              <img onclick="showModal(this.id, '10-jähriges Arbeitsjubiläum von Slavko Bogadek - 2018.')" class="gallery-image d-block h-100" src="../img/gallery/img03.jpg" id="img03.jpg" alt="Third slide">
+              <div class="carousel-caption d-md-block">
+                <p style="margin-bottom: 0px;">10-jähriges Arbeitsjubiläum von Slavko Bogadek - 2018.</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img onclick="showModal(this.id, '10-jähriges Arbeitsjubiläum von Franjo Pakši - 2022.')" class="gallery-image d-block h-100" src="../img/gallery/img04.jpeg" id="img04.jpeg" alt="Fourth slide">
+              <div class="carousel-caption d-block">
+                <p style="margin-bottom: 0px;">10-jähriges Arbeitsjubiläum von Franjo Pakši - 2022.</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img onclick="showModal(this.id, '10-jähriges Arbeitsjubiläum von Robert Strelec - 2016.')" class="gallery-image d-block h-100" src="../img/gallery/img05.jpg" id="img05.jpg" alt="Fiffth slide">
+              <div class="carousel-caption d-block">
+                <p style="margin-bottom: 0px;">10-jähriges Arbeitsjubiläum von Robert Strelec - 2016.</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img onclick="showModal(this.id, '10-jähriges Arbeitsjubiläum von Franjo Košutar - 2019.')" class="gallery-image d-block h-100" src="../img/gallery/img06.jpg" id="img06.jpg" alt="First slide">
+              <div class="carousel-caption d-block">
+                <p style="margin-bottom: 0px;">10-jähriges Arbeitsjubiläum von Franjo Košutar - 2019.</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+             <img onclick="showModal(this.id, 'Unser Bürofläche')" class="gallery-image d-block h-100" src="../img/gallery/img07.jpeg" id="img07.jpeg" alt="First slide">
+              <div class="carousel-caption d-block">
+                <p style="margin-bottom: 0px;">Unser Bürofläche</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img onclick="showModal(this.id, '')" class="gallery-image d-block h-100" src="../img/gallery/img08.jpg" id="img08.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item h-100">
+              <img onclick="showModal(this.id, '10-jähriges Arbeitsjubiläum von Ivan Talan und Velmir Kamberović - 2017.')" class="gallery-image d-block h-100" src="../img/gallery/img09.jpg" id="img09.jpg" alt="First slide">
+              <div class="carousel-caption d-block">
+                <p style="margin-bottom: 0px;">10-jähriges Arbeitsjubiläum von Ivan Talan und Velmir Kamberović - 2017.</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img onclick="showModal(this.id, '')" class="gallery-image d-block h-100" src="../img/gallery/img10.jpg" id="img10.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item h-100">
+              <img onclick="showModal(this.id, 'Jahresendfeier - 2019.')" class="gallery-image d-block h-100" src="../img/gallery/img11.jpg" id="img11.jpg" alt="First slide">
+              <div class="carousel-caption d-block">
+                <p style="margin-bottom: 0px;">Jahresendfeier - 2019.</p>
+              </div>
+            </div>
+            <div class="carousel-item h-100">
+              <img onclick="showModal(this.id, '10-jähriges Arbeitsjubiläum von Robert Pšak - 2019.')" class="gallery-image d-block h-100" src="../img/gallery/img12.jpg" id="img12.jpg" alt="First slide">
+              <div class="carousel-caption d-block">
+                <p style="margin-bottom: 0px;">10-jähriges Arbeitsjubiläum von Robert Pšak - 2019.</p>
+              </div>
+            </div>
           </div>
+          <a class="carousel-control-prev" style="cursor: pointer;" data-target="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" style="cursor: pointer;" data-target="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-      </section>
     </div>
   </section>
 
@@ -628,6 +713,7 @@
   <script src="../js/jquery.singlePageNav.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/projectCounter.js"></script>
+  <script type="text/javascript" src="../js/galleryModal.js"></script>
   <script>
 
     var firstRun = true;

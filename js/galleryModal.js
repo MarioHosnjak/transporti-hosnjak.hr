@@ -18,6 +18,10 @@ function showModal(imgName, caption) {
 
     // When the user clicks on <span> (x), close the modal
     span.onclick = function () {
-        modal.style.display = "none"
+        closeModal()
     }
+}
+
+function closeModal() {
+    modal.style.display = "none"
 }
