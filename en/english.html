@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="../css/bootstrap.min.css" />
   <link rel="stylesheet" href="../css/main.css" />
   <link rel="stylesheet" href="../css/counter.css" />
+  <link rel="stylesheet" href="../css/modal.css"/>
 </head>
 
 <body>
@@ -222,6 +223,14 @@
         </div>
       </section>
     </div> -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <div style="max-height: 80vh;"><img style="height: 100%;" class="modal-content" id="img01"></div>
+      <div id="caption"></div>
+    </div>
+
     <div class="gallery-container">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -241,70 +250,70 @@
           </ol>
           <div class="carousel-inner h-100">
             <div class="carousel-item active h-100">
-              <a href="../img/gallery/img13.jpg"><img class="gallery-image d-block h-100" src="../img/gallery/img13.jpg" alt="First slide"></a>
+              <img onclick="showModal(this.id, '20 Years in Business Celebration - 2024.')" class="gallery-image d-block h-100" src="../img/gallery/img13.jpg" id="img13.jpg" alt="First slide">
               <div class="carousel-caption d-block">
                 <p style="margin-bottom: 0px;">20 Years in Business Celebration - 2024.</p>
               </div>
             </div>
             <div class="carousel-item h-100">
-              <a href="../img/gallery/img01.jpg"><img class="gallery-image d-block h-100" src="../img/gallery/img01.jpg" alt="First slide"></a>
+              <img onclick="showModal(this.id, 'Football gathering 2019.')" class="gallery-image d-block h-100" src="../img/gallery/img01.jpg" id="img01.jpg" alt="First slide">
               <div class="carousel-caption d-block">
                 <p style="margin-bottom: 0px;">Football gathering 2019.</p>
               </div>
             </div>
             <div class="carousel-item h-100">
-            <a href="../img/gallery/img02.jpeg"><img class="gallery-image d-block h-100" src="../img/gallery/img02.jpeg" alt="Second slide"></a>
+            <img onclick="showModal(this.id, '')" class="gallery-image d-block h-100" src="../img/gallery/img02.jpeg" id="img02.jpeg" alt="Second slide">
             </div>
             <div class="carousel-item h-100">
-              <a href="../img/gallery/img03.jpg"><img class="gallery-image d-block h-100" src="../img/gallery/img03.jpg" alt="Third slide"></a>
+              <img onclick="showModal(this.id, '10 years of service for Slavko Bogadek - 2018.')" class="gallery-image d-block h-100" src="../img/gallery/img03.jpg" id="img03.jpg" alt="Third slide">
               <div class="carousel-caption d-md-block">
                 <p style="margin-bottom: 0px;">10 years of service for Slavko Bogadek - 2018.</p>
               </div>
             </div>
             <div class="carousel-item h-100">
-              <a href="../img/gallery/img04.jpeg"><img class="gallery-image d-block h-100" src="../img/gallery/img04.jpeg" alt="Fourth slide"></a>
+              <img onclick="showModal(this.id, '10 years of service for Franjo Pakši - 2022.')" class="gallery-image d-block h-100" src="../img/gallery/img04.jpeg" id="img04.jpeg" alt="Fourth slide">
               <div class="carousel-caption d-block">
                 <p style="margin-bottom: 0px;">10 years of service for Franjo Pakši - 2022.</p>
               </div>
             </div>
             <div class="carousel-item h-100">
-              <a href="../img/gallery/img05.jpg"><img class="gallery-image d-block h-100" src="../img/gallery/img05.jpg" alt="Fiffth slide"></a>
+              <img onclick="showModal(this.id, '10 years of service for Robert Strelec - 2016.')" class="gallery-image d-block h-100" src="../img/gallery/img05.jpg" id="img05.jpg" alt="Fiffth slide">
               <div class="carousel-caption d-block">
                 <p style="margin-bottom: 0px;">10 years of service for Robert Strelec - 2016.</p>
               </div>
             </div>
             <div class="carousel-item h-100">
-              <a href="../img/gallery/img06.jpg"><img class="gallery-image d-block h-100" src="../img/gallery/img06.jpg" alt="First slide"></a>
+              <img onclick="showModal(this.id, '10 years of service for Franjo Košutar - 2019.')" class="gallery-image d-block h-100" src="../img/gallery/img06.jpg" id="img06.jpg" alt="First slide">
               <div class="carousel-caption d-block">
                 <p style="margin-bottom: 0px;">10 years of service for Franjo Košutar - 2019.</p>
               </div>
             </div>
             <div class="carousel-item h-100">
-              <a href="../img/gallery/img07.jpeg"><img class="gallery-image d-block h-100" src="../img/gallery/img07.jpeg" alt="First slide"></a>
+             <img onclick="showModal(this.id, 'Our office space')" class="gallery-image d-block h-100" src="../img/gallery/img07.jpeg" id="img07.jpeg" alt="First slide">
               <div class="carousel-caption d-block">
                 <p style="margin-bottom: 0px;">Our office space</p>
               </div>
             </div>
             <div class="carousel-item h-100">
-              <a href="../img/gallery/img08.jpg"><img class="gallery-image d-block h-100" src="../img/gallery/img08.jpg" alt="First slide"></a>
+              <img onclick="showModal(this.id, '')" class="gallery-image d-block h-100" src="../img/gallery/img08.jpg" id="img08.jpg" alt="First slide">
             </div>
             <div class="carousel-item h-100">
-              <a href="../img/gallery/img09.JPG"><img class="gallery-image d-block h-100" src="../img/gallery/img09.JPG" alt="First slide"></a>
+              <img onclick="showModal(this.id, '10 years of service for Ivan Talan and Velmir Kamberović - 2017.')" class="gallery-image d-block h-100" src="../img/gallery/img09.jpg" id="img09.jpg" alt="First slide">
               <div class="carousel-caption d-block">
                 <p style="margin-bottom: 0px;">10 years of service for Ivan Talan and Velmir Kamberović - 2017.</p>
               </div>
             </div>
             <div class="carousel-item h-100">
-              <a href="../img/gallery/img10.jpg"><img class="gallery-image d-block h-100" src="../img/gallery/img10.jpg" alt="First slide"></a>
+              <img onclick="showModal(this.id, '')" class="gallery-image d-block h-100" src="../img/gallery/img10.jpg" id="img10.jpg" alt="First slide">
             </div>
             <div class="carousel-item h-100">
-              <a href="../img/gallery/img11.jpg"><img class="gallery-image d-block h-100" src="../img/gallery/img11.jpg" alt="First slide"></a>
+              <img onclick="showModal(this.id, 'End-of-year celebration - 2019.')" class="gallery-image d-block h-100" src="../img/gallery/img11.jpg" id="img11.jpg" alt="First slide">
               <div class="carousel-caption d-block">
                 <p style="margin-bottom: 0px;">End-of-year celebration - 2019.</p>
               </div>
             </div>
             <div class="carousel-item h-100">
-              <a href="../img/gallery/img12.jpg"><img class="gallery-image d-block h-100" src="../img/gallery/img12.jpg" alt="First slide"></a>
+              <img onclick="showModal(this.id, '10 years of service for Robert Pšak - 2019.')" class="gallery-image d-block h-100" src="../img/gallery/img12.jpg" id="img12.jpg" alt="First slide">
               <div class="carousel-caption d-block">
                 <p style="margin-bottom: 0px;">10 years of service for Robert Pšak - 2019.</p>
               </div>
@@ -720,6 +729,7 @@
   <script src="../js/jquery.singlePageNav.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/projectCounter.js"></script>
+  <script type="text/javascript" src="../js/galleryModal.js"></script>
   <script>
 
     var firstRun = true;
