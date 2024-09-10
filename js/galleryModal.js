@@ -5,12 +5,12 @@ var modal = document.getElementById("myModal")
 var modalImg = document.getElementById("img01")
 var captionText = document.getElementById("caption")
 
-function showModal(imgName, caption) {
+function showModal(imgPath, caption) {
     // Display the modal
     modal.style.display = "flex"
     modal.style.flexDirection = "column"
     modal.style.alignContent = "center"
-    modalImg.src = `../img/gallery/${imgName}`
+    modalImg.src = imgPath
     captionText.innerHTML = caption
 
     // Get the <span> element that closes the modal
