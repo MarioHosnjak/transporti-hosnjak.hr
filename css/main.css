@@ -567,6 +567,8 @@ figure.effect-honey:hover h2 i {
   max-height: 400px; 
   display: flex; 
   justify-content: center;
+  -webkit-filter: drop-shadow(3px 3px 3px #222); 
+  filter: drop-shadow(3px 3px 3px #222);
 }
 
 .gallery-image {
@@ -574,6 +576,7 @@ figure.effect-honey:hover h2 i {
   overflow: hidden; 
   object-fit: cover;
   cursor: pointer;
+  border-radius: 5px;
 }
 
 
