@@ -1,5 +1,5 @@
-/* The Modal (background) */
-.modal {
+/* Gallery modal (background) */
+#myModal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1000; /* Sit on top */
@@ -13,8 +13,8 @@
     background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
   }
   
-  /* Modal Content (image) */
-  .modal-content {
+  /* Gallery modal content (image) */
+  #myModal .modal-content {
     margin: auto;
     display: block;
     /*width: 80%;*/
@@ -32,7 +32,7 @@
   }
   
   /* Add Animation */
-  .modal-content, #caption {  
+  #myModal .modal-content, #caption {  
     animation-name: zoom;
     animation-duration: 0.6s;
   }
@@ -43,7 +43,7 @@
   }
   
   /* The Close Button */
-  .close {
+  #myModal .close {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -53,8 +53,8 @@
     transition: 0.3s;
   }
   
-  .close:hover,
-  .close:focus {
+  #myModal .close:hover,
+  #myModal .close:focus {
     color: #bbb;
     text-decoration: none;
     cursor: pointer;
@@ -62,7 +62,48 @@
   
   /* 100% Image Width on Smaller Screens */
   @media only screen and (max-width: 700px){
-    .modal-content {
+    #myModal .modal-content {
       width: 100%;
+    }
+  }
+
+  /* Hiring modal sizing (all languages) */
+  #hiringModal .modal-dialog {
+    max-width: 520px;
+    width: 86vw;
+    margin: 1rem auto;
+  }
+
+  #hiringModal .modal-content {
+    max-height: 88vh;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  #hiringModal .modal-body {
+    overflow-y: auto;
+    max-height: calc(88vh - 170px);
+  }
+
+  #hiringModal .hiring-lang-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    line-height: 1;
+  }
+
+  #hiringModal .hiring-lang-btn img {
+    display: block;
+  }
+
+  @media only screen and (max-width: 576px) {
+    #hiringModal .modal-dialog {
+      width: 88vw;
+      margin: 0.75rem auto;
+    }
+
+    #hiringModal .modal-title {
+      font-size: 20px !important;
     }
   }

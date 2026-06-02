@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://transporti-hosnjak.hr/sitemap.xml
